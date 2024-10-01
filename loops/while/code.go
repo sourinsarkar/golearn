@@ -1,13 +1,20 @@
 package main
 import "fmt"
 
-func main() {
-	n := 1
+func main (){
+	var n int = 1
 
 	for n <= 10 {
-		product := 5 * n
-		
+		fmt.Println(n)
+		n++
+	}
+
+	n = 1
+
+	for n <= 10 {
+		var product int = 5 * n
+
 		fmt.Printf("5 * %d = %d\n", n, product)
 		n++
 	}
-}	
+}
