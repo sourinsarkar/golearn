@@ -34,10 +34,10 @@ func main() {
 	newslice3[2] = 30
 	newslice3[3] = 40
 	newslice3[4] = 50
-	// newslice3[5] = 60
+	newslice3[5] = 60
 	fmt.Println(newslice3)
-	newslice3 = append(newslice3, 60, 70, 80)
-	fmt.Println(newslice3)
+	// newslice3 = append(newslice3, 60, 70, 80)
+	// fmt.Println(newslice3)
 	fmt.Println("Length:", len(newslice3))
 	fmt.Println("Capacity:", cap(newslice3))
 }
