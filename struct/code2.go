@@ -11,7 +11,7 @@ type NewRectangle struct {
 	rect Rectangle
 }
 
-func main() {
+func newRectExample() {
 	rectInstance := NewRectangle {
 		length: 10,
 		breadth: 20,

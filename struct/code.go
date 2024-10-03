@@ -30,4 +30,6 @@ func main() {
 	fmt.Println("Length:", rect.length)
 	fmt.Println("Breadth:", rect.breadth)
 	fmt.Println("Area:", rect.length * rect.breadth)
+
+	newRectExample();
 }
