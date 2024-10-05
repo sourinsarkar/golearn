@@ -2,7 +2,7 @@ package main
 import "fmt"
 
 func main() {
-	// Creating slize from am array
+	// Creating slize from an array
 	numbers := [8]int{10, 20, 30, 40, 50, 60, 70, 80}
 	sliceNumbers := numbers[2 : 5]
 	fmt.Print(sliceNumbers, "\n")

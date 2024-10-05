@@ -11,13 +11,15 @@ type NewRectangle struct {
 	rect Rectangle
 }
 
+func rectToBeUsed(lambai int, chodai int) int {
+	return lambai * chodai
+}
+
 func newRectExample() {
 	rectInstance := NewRectangle {
 		length: 10,
 		breadth: 20,
-		rect: func(length int, breadth int) int {
-			return length * breadth
-		},
+		rect: rectToBeUsed,
 	}
 
 	fmt.Println(rectInstance.rect(rectInstance.length, rectInstance.breadth))
