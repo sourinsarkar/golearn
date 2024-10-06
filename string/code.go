@@ -29,4 +29,8 @@ func main() {
 	// Create String from slice
 	stringSlice := []string { "I", "love", "India" }
 	fmt.Println(strings.Join(stringSlice, " ") + ".")
+
+	str6 := "Go"
+	str6 = str6 + "lang"
+	fmt.Println(str6)
 }
