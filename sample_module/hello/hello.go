@@ -8,12 +8,12 @@ import (
 )
 
 func main() {
+	log.SetFlags(0)
 	message, err := greetings.Hello("Sourin")
 
 	if err != nil {
-		log.SetFlags(0)
 		log.Fatal(err)
-	} else {	
+	} else {
 		fmt.Println(message)
 	}
 }
