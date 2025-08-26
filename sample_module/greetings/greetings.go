@@ -20,11 +20,27 @@ func randomGreetings() string {
 	messageTemplates := []string{
 		"Hi, %s",
 		"Hey, %s",
-		"Hello, %s",
 		"Hola, %s",
+		"Hello, %s",
 		"Namaste, %s",
 		"Konnichiwa, %s",
 	}
 
 	return messageTemplates[rand.IntN(len(messageTemplates))]
+}
+
+func Hellos(names []string) (map[string]string, error) {
+	newMessages := map[string]string{}
+
+	for _, name := range names {
+		message, err := Hello(name)
+
+		if err != nil {
+			return nil, err
+		}
+
+		newMessages[name] = message
+	}
+
+	return newMessages, nil
 }
